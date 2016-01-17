@@ -26,7 +26,7 @@ nav {
   float: left;
   width: 18%;
   position: fixed;
-  background-color: #002b36;
+  background-color: #eee8d5;
 }
 nav ul {
   list-style: none;
@@ -34,10 +34,10 @@ nav ul {
   margin: 0 0 0 0;
   text-align: center;
   padding: 0 0 0 0;
-  border: 1px solid black;
+  border: 2px solid #586e75;
 }
 nav ul li {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #586e75;
   padding-bottom: 5px;
   padding-top: 5px;
 }
@@ -49,11 +49,11 @@ nav ul li a {
   text-decoration: none;
 }
 nav ul li:hover a {
-  background-color: #6c71c4;
+  /*background-color: #6c71c4;*/
   color: #dc322f;
 }
 nav ul li:hover {
-  background-color: #6c71c4;
+  background-color: #839496;
 }
 #nav-placeholder {
   border: 1px solid rgba(0, 0, 0, 0);
@@ -83,7 +83,7 @@ article {
   width: 95%;
 }
 time {
-  color: #93a1a1;
+  color: #839496;
   font-style: oblique;
   font-weight: bolder;
 }
@@ -92,14 +92,14 @@ body {
   background-color: #fdf6e3;
 }
 p {
-  color: #586e75;
+  color: #839496;
 }
 footer {
-  color: #586e75;
+  color: #839496;
   font-style: italic;
 }
 #page-header {
-  padding-bottom: 25px;
+  /*padding-bottom: 25px;*/
   width: 100%;
   top: 0px;
   /*display: block;*/
@@ -127,7 +127,7 @@ footer {
   -webkit-text-stroke: 1px #6c71c4;
 }
 .article-title {
-  font-size: 36px;
+  font-size: 32px;
   letter-spacing: -1px;
   color: #cb4b16;
   margin-bottom: 0px;
@@ -152,3 +152,41 @@ tr + tr {
 td, th {
   padding: 10px;
 }
+
+/* make keyframes that tell the start state and the end state of our object */
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:0.5s;
+	-moz-animation-duration:0.5s;
+	animation-duration:0.5s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.1s;
+-moz-animation-delay: 0.1s;
+animation-delay: 0.1s;
+}
+
+.fade-in.two {
+-webkit-animation-delay: 0.2s;
+-moz-animation-delay:0.2s;
+animation-delay: 0.2s;
+}
+
+.fade-in.three {
+-webkit-animation-delay: 0.5s;
+-moz-animation-delay: 0.5s;
+animation-delay: 0.5s;
