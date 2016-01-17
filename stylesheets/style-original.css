@@ -25,12 +25,15 @@ acc_green         #859900
 nav {
   display: block;
   text-align: center;
-  float: right;
   width: 100%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 nav ul {
   list-style: none;
-  font-size: 26px;
+  font-size: 22px;
+  margin-bottom: 0px;
+  margin-top: 0;
 }
 nav ul li {
   display: inline;
@@ -64,6 +67,9 @@ tr + tr {
 }
 td, th {
   padding: 10px;
+}
+article p {
+  text-align: justify;
 }
 article {
   border: 3px solid #6c71c4;
@@ -101,22 +107,23 @@ a {
   color: #268bd2;
 }
 #page-header {
-  padding-bottom: 75px;
+  padding-bottom: 25px;
   width: 100%;
   top: 0px;
-  display: block;
+  /*display: block;*/
   position: fixed;
   height: 100px;
   background-color: #fdf6e3;
+  z-index: 1;
+  box-shadow: 10px 10px 15px #fdf6e3;
 }
 #header-placeholder {
-  height: 190px;
+  height: 135px;
   -webkit-filter: blur(10px);
   filter: blur(10px);
-  z-index: 100;
 }
 .page-title {
-  font-size: 100px;
+  font-size: 80px;
   text-align: center;
   color: #cb4b16;
   margin-bottom: 0px;
