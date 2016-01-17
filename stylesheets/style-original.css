@@ -70,6 +70,7 @@ article {
   border-radius: 5px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: 15px;
 }
 #outer {
   max-width: 1000px;
@@ -99,6 +100,21 @@ footer {
 a {
   color: #268bd2;
 }
+#page-header {
+  padding-bottom: 75px;
+  width: 100%;
+  top: 0px;
+  display: block;
+  position: fixed;
+  height: 100px;
+  background-color: #fdf6e3;
+}
+#header-placeholder {
+  height: 190px;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+  z-index: 100;
+}
 .page-title {
   font-size: 100px;
   text-align: center;
@@ -117,9 +133,10 @@ a {
   color: #cb4b16;
   margin-bottom: 0px;
   position: relative;
-  margin-top: 0;
+  margin-top: 15px;
   font-family: 'Myriad Pro', 'Myriad', helvetica, arial, sans-serif;
   text-shadow: 2px 3px 3px #839496;
   letter-spacing: 0px;
   -webkit-text-stroke: 1px #6c71c4;
+  z-index: -1;
 }
