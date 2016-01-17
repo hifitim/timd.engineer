@@ -23,50 +23,43 @@ acc_green         #859900
  */
 
 nav {
-  display: block;
-  text-align: center;
-  width: 100%;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  float: left;
+  width: 18%;
+  position: fixed;
+  background-color: #002b36;
 }
 nav ul {
   list-style: none;
   font-size: 22px;
-  margin-bottom: 0px;
-  margin-top: 0;
+  margin: 0 0 0 0;
+  text-align: center;
+  padding: 0 0 0 0;
+  border: 1px solid black;
 }
 nav ul li {
-  display: inline;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+nav ul li:last-child {
+    border-bottom: none;
 }
 nav ul li a {
-  display: inline-block;
-  padding: 3px 6px;
   color: #268bd2;
   text-decoration: none;
-  font-weight: bold;
 }
-nav ul li a:hover {
-  background: #002b36;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  padding: 3px 6px;
-  margin: 0;
-  text-decoration: none;
-  text-shadow: 0px 0px 2px #2aa198;
+nav ul li:hover a {
+  background-color: #6c71c4;
+  color: #dc322f;
 }
-table {
-  border-collapse: collapse;
-  border: 1px solid #6c71c4;
+nav ul li:hover {
+  background-color: #6c71c4;
 }
-td + td, th + th {
-  border-left: 1px solid #6c71c4;
-}
-tr + tr {
-  border-top: 1px solid #6c71c4;
-}
-td, th {
-  padding: 10px;
+#nav-placeholder {
+  border: 1px solid rgba(0, 0, 0, 0);
+  width: 18%;
+  float: left;
+  z-index: -1;
 }
 article p {
   text-align: justify;
@@ -79,9 +72,11 @@ article {
   margin-bottom: 15px;
 }
 #outer {
+  float: left;
   max-width: 1000px;
   min-width: 700px;
-  margin: 0 auto;
+  width: 65%;
+  margin: 0 0 0 0;
 }
 #inner {
   margin: 0 auto;
@@ -102,9 +97,6 @@ p {
 footer {
   color: #586e75;
   font-style: italic;
-}
-a {
-  color: #268bd2;
 }
 #page-header {
   padding-bottom: 25px;
@@ -146,4 +138,17 @@ a {
   letter-spacing: 0px;
   -webkit-text-stroke: 1px #6c71c4;
   z-index: -1;
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid #6c71c4;
+}
+td + td, th + th {
+  border-left: 1px solid #6c71c4;
+}
+tr + tr {
+  border-top: 1px solid #6c71c4;
+}
+td, th {
+  padding: 10px;
 }
