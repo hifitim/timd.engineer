@@ -23,6 +23,7 @@ acc_green         #859900
  */
 
 nav {
+  margin-top: 5px;
   float: left;
   width: 18%;
   position: fixed;
@@ -34,10 +35,10 @@ nav ul {
   margin: 0 0 0 0;
   text-align: center;
   padding: 0 0 0 0;
-  border: 2px solid #586e75;
+  border: 2px solid #6c71c4;
 }
 nav ul li {
-  border-bottom: 2px solid #586e75;
+  border-bottom: 2px solid #6c71c4;
   padding-bottom: 5px;
   padding-top: 5px;
 }
@@ -65,8 +66,8 @@ article p {
   text-align: justify;
 }
 article {
-  border: 3px solid #6c71c4;
-  border-radius: 5px;
+  border-bottom: 2px solid #6c71c4;
+  padding-top: 0px;
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 15px;
@@ -77,6 +78,7 @@ article {
   min-width: 700px;
   width: 65%;
   margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 #inner {
   margin: 0 auto;
@@ -110,7 +112,7 @@ footer {
   box-shadow: 10px 10px 15px #fdf6e3;
 }
 #header-placeholder {
-  height: 135px;
+  height: 110px;
   -webkit-filter: blur(10px);
   filter: blur(10px);
 }
@@ -131,8 +133,9 @@ footer {
   letter-spacing: -1px;
   color: #cb4b16;
   margin-bottom: 0px;
+  margin-top: 0px;
   position: relative;
-  margin-top: 15px;
+  /*margin-top: 15px;*/
   font-family: 'Myriad Pro', 'Myriad', helvetica, arial, sans-serif;
   text-shadow: 2px 3px 3px #839496;
   letter-spacing: 0px;
