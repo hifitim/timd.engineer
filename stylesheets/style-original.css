@@ -21,13 +21,26 @@ acc_blue          #268bd2
 acc_cyan	        #2aa198
 acc_green         #859900
  */
-
 nav {
   margin-top: 5px;
-  float: left;
-  width: 15%;
+  display: inline-block;
+  width: 150px;
   position: fixed;
   background-color: #eee8d5;
+}
+nav h1 {
+  background: #fdf6e3;
+  font-size: 20px;
+  letter-spacing: -1px;
+  color: #cb4b16;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  position: relative;
+  font-family: 'Myriad Pro', 'Myriad', helvetica, arial, sans-serif;
+  text-shadow: 2px 3px 3px #839496;
+  letter-spacing: 0px;
+  -webkit-text-stroke: 1px #6c71c4;
+  text-align: center;
 }
 nav ul {
   list-style: none;
@@ -92,6 +105,7 @@ time {
 body {
   font-family: Tahoma, Helvetica, Arial, Sans-Serif;
   background-color: #fdf6e3;
+  min-width: 1000px;
 }
 p {
   color: #839496;
