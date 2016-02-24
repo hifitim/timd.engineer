@@ -1,0 +1,72 @@
+  /*
+SOLARIZED         HEX
+BACKGROUND TONES
+base03            #002b36
+base02            #073642
+CONTENT TONES
+base01            #586e75
+base00            #657b83
+base0             #839496
+base1             #93a1a1
+BACKGROUND TONES
+base2             #eee8d5
+base3             #fdf6e3
+ACCENT COLORS
+acc_yellow        #b58900
+acc_orange        #cb4b16
+acc_red	          #dc322f
+acc_magenta	      #d33682
+acc_violet	      #6c71c4
+acc_blue          #268bd2
+acc_cyan	        #2aa198
+acc_green         #859900
+ */
+article p {
+  text-align: justify;
+}
+article {
+  border-bottom: 2px solid #6c71c4;
+  padding-top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 15px;
+}
+time {
+  color: #839496;
+  font-style: oblique;
+  font-weight: bolder;
+}
+body {
+  font-family: Tahoma, Helvetica, Arial, Sans-Serif;
+  background-color: #fdf6e3;
+  /*min-width: 1000px;*/
+}
+p {
+  color: #839496;
+}
+.article-title {
+  font-size: 32px;
+  letter-spacing: -1px;
+  color: #cb4b16;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  position: relative;
+  font-family: 'Myriad Pro', 'Myriad', helvetica, arial, sans-serif;
+  text-shadow: 2px 3px 3px #839496;
+  letter-spacing: 0px;
+  -webkit-text-stroke: 1px #6c71c4;
+  z-index: -1;
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid #6c71c4;
+}
+td + td, th + th {
+  border-left: 1px solid #6c71c4;
+}
+tr + tr {
+  border-top: 1px solid #6c71c4;
+}
+td, th {
+  padding: 10px;
+}

@@ -70,7 +70,7 @@ nav ul li:hover {
 }
 #nav-placeholder {
   border: 1px solid rgba(0, 0, 0, 0);
-  width: 15%;
+  width: 150px;
   float: left;
   z-index: -1;
 }
@@ -88,7 +88,6 @@ article {
   float: left;
   max-width: 800px;
   min-width: 700px;
-  /*width: 65%;*/
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 }
