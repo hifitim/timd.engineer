@@ -1,24 +1,6 @@
 <head>
 <link rel="stylesheet" type="text/css" href="./stylesheets/style-inner.css" />
-	<script>
-		function landing_time() 
-		{
-			var d = new Date()
-			var timezone = d.toString().match(/\(([A-Za-z\s].*)\)/)[1]
-			var monthNames = ["January", "February", "March", "April", "May", "June", 
-							  "July", "August", "September", "October", "November", "December"];
-			var weekday = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-			var n = weekday[d.getDay()];
-			var m = monthNames[d.getMonth()];
-			var y = d.getFullYear();
-			var mm = d.getMinutes();
-			var hh = d.getHours();
-			var ss = d.getSeconds();
-			document.getElementById("landing-time").dateTime = n + " " + m + " " + y + " " + hh+":"+mm+":"+ss + " " + timezone
-			document.getElementById("landing-time").innerHTML = n + " " + m + " " + y + " " + hh+":"+mm+":"+ss + " " + timezone
-			document.getElementById("landing-time").style.textAlign = "center";
-		}
-	</script>
+	<script src="javascript/source.js"></script>
 </head>
 <html>
 <body>
