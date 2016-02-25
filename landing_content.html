@@ -16,17 +16,18 @@
 			var ss = d.getSeconds();
 			document.getElementById("landing-time").dateTime = n + " " + m + " " + y + " " + hh+":"+mm+":"+ss + " " + timezone
 			document.getElementById("landing-time").innerHTML = n + " " + m + " " + y + " " + hh+":"+mm+":"+ss + " " + timezone
+			document.getElementById("landing-time").style.textAlign = "center";
 		}
 	</script>
 </head>
 <html>
 <body>
-	<article onload="alert('help!');">
+	<article>
 		<h1 class="article-title">Welcome</h1>
-		<time id="landing-time"></time>
+		<p class="time-wrapper"><time id="landing-time"></time></p>
 		<script>landing_time()</script>
 		<p>Welcome to timd.engineer. Check out some links.</p>
-		<a href="cgi-bin/test.py">test</a>
+		<a href="articles.html">test</a>
 	</article>
 </body>
 </html>

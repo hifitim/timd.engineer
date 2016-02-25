@@ -34,7 +34,12 @@ article {
 time {
   color: #839496;
   font-style: oblique;
-  font-weight: bolder;
+  text-align: center;
+  font-size: 14px;
+}
+.time-wrapper {
+  text-align: center;
+  margin-top: 0px;
 }
 body {
   font-family: Tahoma, Helvetica, Arial, Sans-Serif;
@@ -50,8 +55,9 @@ p {
   font-size: 32px;
   letter-spacing: -1px;
   /*color: #cb4b16;*/
-  color: #268bd2;
+  color: #6c71c4;
   margin-bottom: 0px;
+  padding-bottom: 0px;
   margin-top: 0px;
   position: relative;
   font-family: 'Myriad Pro', 'Myriad', helvetica, arial, sans-serif;
@@ -60,21 +66,19 @@ p {
   -webkit-text-stroke: 1px #6c71c4;
   z-index: -1;
 }
-time {
-  border: 1px black solid;
+.subtitle {
   text-align: center;
-  font-size: 14px;
-}
-table {
-  border-collapse: collapse;
-  border: 1px solid #6c71c4;
-}
-td + td, th + th {
-  border-left: 1px solid #6c71c4;
-}
-tr + tr {
-  border-top: 1px solid #6c71c4;
-}
-td, th {
-  padding: 10px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  /*color: #cb4b16;*/
+  color: #dc322f;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  position: relative;
+  font-family: 'Myriad Pro', 'Myriad', helvetica, arial, sans-serif;
+  /*text-shadow: 2px 3px 3px #839496;*/
+  /*letter-spacing: 0px;*/
+  /*-webkit-text-stroke: 1px #6c71c4;*/
+  z-index: -1;
 }
