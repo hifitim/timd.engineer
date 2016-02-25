@@ -11,7 +11,9 @@ files = listdir("../articles")
 
 print 'Content-type: text/html\n\n'
 
-print '<H1>How to run Python scripts in cPanel</H1>'
+print '<link rel="stylesheet" type="text/css" href="../stylesheets/style-inner.css" />'
+
+print '<H1 class="article-title">How to run Python scripts in cPanel</H1>'
 print '<ul>'
 for f in files:
 	if '.html' in f:

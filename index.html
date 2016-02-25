@@ -51,24 +51,33 @@ acc_green         #859900
 
         document.getElementById("content-object").style.height = heights - header_height - 25 + "px";
         document.getElementById("content-object").style.width = "750px";
+        set_title_center();
       }
       window.onresize = function() {
         resize();
+      }
+      function set_title_center()
+      {
+        var nav_width = document.getElementById("nav-placeholder").clientWidth;
+        var title_width = document.getElementById("page-title-h1").clientWidth;
+        var content_width = document.getElementById("content-container").clientWidth;
+
+        document.getElementById("page-title-h1").style.marginLeft = (nav_width + ((content_width-title_width)/2)) + "px";
       }
 </script>
 </head>
 
 <body onload="load_content('landing_content.html');resize();">
   <header id="page-header" class="fade-in one">
-    <h1 class="page-title">timd.engineer</h1>
+    <h1 class="page-title" id="page-title-h1">timd.engineer</h1>
   </header>
   <div id="header-placeholder"></div>
 
   <nav class="fade-in two">
     <h1>Navigation</h1>
     <ul>
-      <a rel="external" href="#"><li>Home</li></a>
-      <a rel="external" href="javascript:load_content('articles.html');"><li>Articles</li></a>
+      <a rel="external" href="javascript:load_content('landing_content.html');"><li>Home</li></a>
+      <a rel="external" href="javascript:load_content('cgi-bin/test.py');"><li>Articles</li></a>
       <a rel="external" href="javascript:load_content('somepage.html');"><li>About</li></a>
       <a rel="external" href="#"><li>Contact</li></a>
     </ul>

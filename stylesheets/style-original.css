@@ -110,7 +110,7 @@ footer {
 }
 #page-header {
   /*padding-bottom: 25px;*/
-  width: 100%;
+  /*width: 100%;*/
   top: 0px;
   /*display: block;*/
   position: fixed;
@@ -126,7 +126,7 @@ footer {
 }
 .page-title {
   font-size: 80px;
-  text-align: center;
+  /*text-align: center;*/
   color: #cb4b16;
   margin-bottom: 0px;
   position: relative;
@@ -139,7 +139,8 @@ footer {
 .article-title {
   font-size: 32px;
   letter-spacing: -1px;
-  color: #cb4b16;
+  /*color: #cb4b16;*/
+  color: #6c71c4;
   margin-bottom: 0px;
   margin-top: 0px;
   position: relative;
