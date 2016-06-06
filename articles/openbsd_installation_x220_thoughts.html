@@ -1,0 +1,40 @@
+<html>
+<link rel="stylesheet" type="text/css" href="../stylesheets/style-inner.css" />
+<article>
+<h1 class="article-title">OpenBSD on the Lenovo x220</h1>
+<h2 class="subtitle">Some thoughts on installation and first runs</h2>
+<p class="time-wrapper"><time datetime="2016-06-06 12:47:32CST">2016-06-06 12:47:32CST</time></p>
+
+<p>
+I managed to install OpenBSD 5.9 on my Lenovo x220 over the weekend and thought I would record thoughts on the install process and the system now that it's setup.
+</p>
+
+
+<h3 class="article-section">Installation</h3>
+<p>This went incredibly smooth. I dd'ed the install59.fs onto an old Sandisk 4GB Cruzer drive and booted the machine into it. The installer defaults were good for just about everything. The only thing that tripped me up was the wireless network connection. This machine has an Intel Advanced-N 6205 chip and it seems that there's some licensing issue with the firmware for this device that makes it impossible for the OpenBSD install CD to include it. The error message that comes up when the installer tries to connect to the WiFi is a bit cryptic (I wish I had saved the text) and I had to do some googling on my Linux machine to figure out that there's a utility called fw_update that installs (if you don't specify a driver) whatever driver it thinks that you need on your machine. After enabling the Ethernet adapter (a straightforward process that <a href="http://www.openbsd.org/faq/faq6.html">FAQ6 detailed</a>) and connecting a cable to my router, a single fw_update command installed the correct firmware and I was up and running with WiFi in minutes.
+</p>
+<p>
+I have a 250GB Samsung 850 Evo SSD in this machine and the default partitioning scheme seems to be fine. I kind of wish that it didn't include an amount of disk space equal to my RAM for swap. I don't think I need 16GB of swap space, 16GB of RAM should be more than sufficient. I may try to get rid of it, but I'm not confident in my ability to use fdisk (or whatever the OpenBSD equivalent is) yet. The other partition sizes seemed more than reasonable.
+</p>
+<h3 class="article-section">Running the System</h3>
+<p>
+After getting the WiFi connected, the first thing I wanted to do was to get a few things installed:</p>
+<ul class="normal-text">
+<li>Emacs</li>
+<li>An IRC client (irssi was my first thought)</li>
+<li>A graphical web browser (Chromium! Hooray!)</li>
+</ul>
+<p>
+I logged in as root and after quickly googling about the right commands for installing packages, I set about pkg_add'ing the bits I wanted. I thought about installing the ports and compiling from source, but I saw recommendations on the web in favor of simply installing the prebuilt binary. Compiling from source takes forever, anyway.
+</p>
+<h3 class="article-section">X11</h3>
+<p>
+X is installed with install59.fs ISO, and it seems that the system ships with a version of fvwm as the default WM. I went ahead and installed a newer version from packages and found my old .fvwm2rc file on a backup drive. It looks like home (a home I haven't visited in a while, but still home). There's a chromium package in the package tree and everything seems to work great.
+</p>
+<h3 class="article-section">A Few Weird Things</h3>
+<p>
+<ul class="normal-text">
+<li>There is something with the backlight on this machine. WHen I would ctrl-alt-backspace out of X because I broke something (which I did a handful of times), the backlight got stuck at minimum and I couldn't change it. It seems to be working now, but I'm not sure what I did to fix it.</li>
+<li>For the first boot, it seems that the sleep on lid close signal wasn't suspending the machine. It seems to be working fine now, but I can't put my finger on why, exactly.</li>
+</ul>
+</p>
